@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ms99ht');
+    src:  url('../fonts/icomoon.eot?ms99ht#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ms99ht') format('truetype'),
+      url('../fonts/icomoon.woff?ms99ht') format('woff'),
+      url('../fonts/icomoon.svg?ms99ht#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-grid:before {
+    content: "\e901";
+  }
+  .icon-line:before {
+    content: "\e90e";
+  }
+  .icon-star:before {
+    content: "\e900";
+  }
+  .icon-edit:before {
+    content: "\e92b";
+  }
+  .icon-calendar:before {
+    content: "\e92a";
+  }
+  .icon-check:before {
+    content: "\e914";
+  }
+  .icon-down:before {
+    content: "\e923";
+  }
+  .icon-document:before {
+    content: "\e91f";
+  }
+  .icon-note:before {
+    content: "\e921";
+  }
+  .icon-profile:before {
+    content: "\e922";
+  }
+  .icon-fitter:before {
+    content: "\e91e";
+  }
+  .icon-security:before {
+    content: "\e91c";
+  }
+  .icon-mail:before {
+    content: "\e902";
+  }
+  .icon-logout:before {
+    content: "\e91d";
+  }
+  .icon-help:before {
+    content: "\e920";
+  }
+  .icon-lock:before {
+    content: "\e924";
+  }
+  .icon-bag:before {
+    content: "\e925";
+  }
+  .icon-global:before {
+    content: "\e926";
+  }
+  .icon-cost:before {
+    content: "\e927";
+  }
+  .icon-close:before {
+    content: "\e942";
+  }
+  .icon-sunrise:before {
+    content: "\e943";
+  }
+  .icon-left_2:before {
+    content: "\e944";
+  }
+  .icon-right_2:before {
+    content: "\e945";
+  }
+  .icon-youtube:before {
+    content: "\e947";
+  }
+  .icon-twitter:before {
+    content: "\e948";
+  }
+  .icon-instragram:before {
+    content: "\e949";
+  }
+  .icon-facebook:before {
+    content: "\e94a";
+  }
+  .icon-playstore:before {
+    content: "\e94b";
+  }
+  .icon-apple:before {
+    content: "\e94c";
+  }
+  .icon-hockey:before {
+    content: "\e915";
+  }
+  .icon-game:before {
+    content: "\e928";
+  }
+  .icon-ball:before {
+    content: "\e913";
+  }
+  .icon-menu:before {
+    content: "\e909";
+  }
+  .icon-right:before {
+    content: "\e907";
+  }
+  .icon-left:before {
+    content: "\e908";
+  }
+  .icon-clock:before {
+    content: "\e903";
+  }
+  .icon-location:before {
+    content: "\e904";
+  }
+  .icon-search:before {
+    content: "\e905";
+  }
+  .icon-like:before {
+    content: "\e906";
+  }
+  .icon-share:before {
+    content: "\e90d";
+  }
+  .icon-football:before {
+    content: "\e90c";
+  }
+  .icon-plus:before {
+    content: "\e90a";
+  }
+  .icon-minus:before {
+    content: "\e90b";
+  }
+  .icon-list:before {
+    content: "\e910";
+  }
+  .icon-rules:before {
+    content: "\e911";
+  }
+  .icon-eraning:before {
+    content: "\e912";
+  }
+  .icon-bet:before {
+    content: "\e916";
+  }
+  .icon-kabaddi:before {
+    content: "\e917";
+  }
+  .icon-tennis:before {
+    content: "\e918";
+  }
+  .icon-right_arrow:before {
+    content: "\e919";
+  }
+  .icon-left_arrow:before {
+    content: "\e91a";
+  }
+  
