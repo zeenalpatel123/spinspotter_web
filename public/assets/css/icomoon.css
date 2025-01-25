@@ -25,6 +25,39 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-fill_like:before {
+    content: "\e934";
+  }
+  .icon-camera:before {
+    content: "\e932";
+  }
+  .icon-linkdin:before {
+    content: "\e92e";
+  }
+  .icon-twitter:before {
+    content: "\e92f";
+  }
+  .icon-instragram:before {
+    content: "\e930";
+  }
+  .icon-facebook:before {
+    content: "\e931";
+  }
+  .icon-cloud:before {
+    content: "\e91b";
+  }
+  .icon-sun:before {
+    content: "\e929";
+  }
+  .icon-evening:before {
+    content: "\e92c";
+  }
+  .icon-moon:before {
+    content: "\e92d";
+  }
+  .icon-filter:before {
+    content: "\e90f";
+  }
   .icon-grid:before {
     content: "\e901";
   }
@@ -55,7 +88,7 @@
   .icon-profile:before {
     content: "\e922";
   }
-  .icon-fitter:before {
+  .icon-fitter2:before {
     content: "\e91e";
   }
   .icon-security:before {
@@ -82,9 +115,6 @@
   .icon-cost:before {
     content: "\e927";
   }
-  .icon-close:before {
-    content: "\e942";
-  }
   .icon-sunrise:before {
     content: "\e943";
   }
@@ -93,18 +123,6 @@
   }
   .icon-right_2:before {
     content: "\e945";
-  }
-  .icon-youtube:before {
-    content: "\e947";
-  }
-  .icon-twitter:before {
-    content: "\e948";
-  }
-  .icon-instragram:before {
-    content: "\e949";
-  }
-  .icon-facebook:before {
-    content: "\e94a";
   }
   .icon-playstore:before {
     content: "\e94b";
@@ -177,5 +195,8 @@
   }
   .icon-left_arrow:before {
     content: "\e91a";
+  }
+  .icon-close:before {
+    content: "\e933";
   }
   
