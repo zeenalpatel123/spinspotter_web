@@ -66,6 +66,63 @@ var swiper = new Swiper(".mySwiper2", {
     },
   });
 
+  // swiper 4 
+var swiper = new Swiper(".mySwiper4", {
+  loop: true,
+slidesPerView: 7,
+spaceBetween: 10,
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+},
+breakpoints: {
+  640: {
+    slidesPerView: 2,
+    spaceBetween: 10,
+  },
+  768: {
+    slidesPerView: 4,
+    spaceBetween: 20,
+  },
+  1024: {
+    slidesPerView: 7,
+    spaceBetween: 30,
+  },
+},
+});
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  centeredSlides: true,
+    spaceBetween: 16,
+    slidesPerView: 3,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 3, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 1,
+    loop: true,
+    loopedSlides: 1, //looped slides should be the same
+    navigation: {
+      nextEl: '.next',
+      prevEl: '.prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
+
+  var swiper = new Swiper(".mySwiper5", {
+    loop: true,
+    grabCursor: true,
+    speed: 1500,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 // faqs tab script 
   $(function() {
     $('.inner_content').slideUp();
@@ -87,3 +144,4 @@ var swiper = new Swiper(".mySwiper2", {
       }     
     });
   });
+

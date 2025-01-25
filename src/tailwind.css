@@ -1,32 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @tailwind base;
 @tailwind components;
-*{@apply font-oswald;}
+*{@apply font-alata;}
 body{@apply bg-[#0A0909];}
 .warrper{@apply w-full max-w-[1440px] mx-auto px-5;}
-.h1,h1{@apply text-34 md:text-38 lg:text-48 xl:text-52 2xl:text-68 font-bold text-white uppercase;}
-.h2,h2{@apply text-24 md:text-28 lg:text-34 xl:text-40 2xl:text-48 font-semibold text-white uppercase;}
-.h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold uppercase text-white;}
-.h4,h4{@apply text-16 md:text-18 lg:text-20 2xl:text-24 font-semibold text-white uppercase;}
-.h5,h5{@apply text-14 lg:text-16 2xl:text-18 text-white uppercase;}
+.h1,h1{@apply text-34 md:text-38 lg:text-48 xl:text-52 2xl:text-68 font-oswald font-bold text-white uppercase;}
+.h2,h2{@apply text-24 md:text-28 lg:text-34 xl:text-40 2xl:text-48 font-oswald  font-semibold text-white uppercase;}
+.h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-oswald  font-bold uppercase text-white;}
+.h4,h4{@apply text-16 md:text-18 lg:text-20 2xl:text-24 font-oswald  font-semibold text-white uppercase;}
+.h5,h5{@apply text-14 lg:text-16 2xl:text-18 font-oswald font-semibold text-white uppercase;}
+.h6,h6{@apply text-12 md:text-14 2xl:text-16 font-oswald text-white uppercase;}
+
 .text16{@apply text-12 md:text-14 2xl:text-16;}
 .anim{@apply duration-300 transition-all;}
-.btn_primary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 whitespace-nowrap bg-secondary text-white text-12 sm:text-14 font-semibold uppercase hover:text-black hover:bg-white anim;}
-.btn_secondary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 whitespace-nowrap bg-secondary text-white text-12 sm:text-14 font-semibold uppercase;}
-/* #open.active{@apply translate-x-0;} */
+.btn_primary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 font-oswald whitespace-nowrap bg-secondary text-white text-12 sm:text-14 font-semibold uppercase hover:text-black hover:bg-white anim;}
+.btn_secondary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 font-oswald whitespace-nowrap bg-secondary text-white text-12 sm:text-14 font-semibold uppercase;}
+/* filter sidebar open hide scrollbar css  */
+#filter{
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+/* filter sidebar open hide scrollbar css  end */
+
+/* input , checkbox and radio css  */
+.input{@apply border border-white bg-black/20 capitalize outline-none text16 text-g2 font-normal py-1.5 md:py-2 lg:py-3.5 px-2.5 md:px-3 lg:px-5 w-full rounded-md md:rounded-[10px];}
 #select_inpu.active, #select_inpu2.active,#select_gender.active{@apply visible opacity-100 translate-y-2;}
 .checkbox{@apply w-5 h-5 rounded border border-white flex items-center justify-center;}
 .radio{@apply w-5 h-5 rounded-full border-2 border-white flex items-center justify-center;}
 input:checked + .checkbox, input:checked + .radio{@apply border-secondary bg-secondary;}
 input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
+/* input , checkbox and radio css end  */
+
 .gra_black{
   background: linear-gradient(180deg, #302F2F 0%, rgba(255, 255, 255, 0) 100%);
 }
 .gra_red{
   background: linear-gradient(180deg, rgba(215, 32, 40, 0) -20.18%, #D72028 100%);
 }
+.gra_green{
+  background: linear-gradient(360deg, #00CF77 0%, rgba(0, 207, 119, 0) 100%);
+}
+.gra_green_hover:focus{
+  background: linear-gradient(360deg, #00CF77 0%, rgba(0, 207, 119, 0) 100%);
+  transition: all;
+  transition-duration: 300ms;
+}
 .g_gra_top{@apply bg-gradient-to-b from-primary to-primary/0;}
 .g_gra_bottom{@apply bg-gradient-to-b from-primary/0 to-primary;}
+
+/* maequee text css  */
 .marquee{
     display: flex;
     align-items: center;
@@ -50,25 +73,76 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
       transform: translateX(-100%);
     }
   }
+/* maequee text css end  */
 
-  
+/* center and larger swiper css  */
   .mySwiper .swiper-wrapper .swiper-slide{@apply opacity-50;}
   .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-active .swiper_content{@apply scale-100;}
   .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-active {  
     transform: scale(1.14) !important;
     opacity: 1 !important;
   }
+/* center and larger swiper css  */
   
+  /* tab menu faqs css  */
 .title_tab.active span.close {
   display: block;
 }
 .title_tab.active span.open {
     display: none;
 }
-/* .tab_main.active{@apply border-b-0 border-transparent;
+.tab_main.active{@apply border-b-0 border-transparent;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-} */
+}
+  /* tab menu faqs css  end */
 
+  /* tab hover and foucs css  */
+  .tab_hover li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #D72028;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all;
+  }
+  .tab_hover li a.active::after, .tab_hover li a:hover::after{
+    width: 100%;
+  }
+  .tab_hover li a.active{
+    color: #D72028;
+  }
+  
+
+
+  .tab_hover2 li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #00CF77;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all;
+  }
+  .tab_hover2 li a.active::after, .tab_hover li a:hover::after{
+    width: 100%;
+  }
+  .tab_hover2 li a.active{
+    color: #00CF77;
+  }
+  .tab-main.active , .tab-main2.active {
+    display: block;
+    transform: scale(1);
+  }
+  .tab-main , .tab-main2{
+      transition: 0.5s all;
+      transform:scale(0);
+  }
+  /* tab hover and foucs css end  */
+  
+ 
   .tossing {
     animation-name: tossing;
     -webkit-animation-name: tossing;
@@ -77,18 +151,6 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
   }
-  
-  /* @keyframes tossing {
-    0% {
-      transform: rotate(-10deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-    100% {
-      transform: rotate(-10deg);
-    }
-  } */
   
   @keyframes tossing {
     0%, 100%{
@@ -119,4 +181,15 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
     100% {  }
   }
  
+  /* ground details swiper css  */
+  .gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  /* ground details swiper css end  */
+
 @tailwind utilities;

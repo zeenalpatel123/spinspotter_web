@@ -43,17 +43,18 @@ module.exports = {
       colors:{
         'primary':'#00CF77',
         'secondary':'#D72028',
-        'dark' : '#141414',
+        'dark' : '#161817',
         'dark2' :'#242424',
         'g1' :'#717171',
         'g2' : '#BEBEBE',
         'g3' : '#282828',
         'g4' : '#484848',
         'g5' : '#353535',
-        'g6' : '#D9D9D9'
+        'g6' : '#CFCFCF'
       },
       fontFamily: {
         'oswald' : ['Oswald','serif'],
+        'alata' : ['Alata','serif']
       },
      
     },
