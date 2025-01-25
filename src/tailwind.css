@@ -12,7 +12,7 @@ body{@apply bg-[#0A0909];}
 .text16{@apply text-12 md:text-14 2xl:text-16;}
 .anim{@apply duration-300 transition-all;}
 .btn_primary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 whitespace-nowrap bg-secondary text-white text-12 sm:text-14 font-semibold uppercase hover:text-black hover:bg-white anim;}
-.btn_secondary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 whitespace-nowrap bg-secondary text-white text-12 sm:text-14 font-semibold uppercase;}
+.btn_secondary{@apply py-2.5 lg:py-3 px-3 md:px-4 lg:px-5 xl:px-7 whitespace-nowrap bg-white text-dark text-12 sm:text-14 font-semibold uppercase hover:text-white hover:bg-secondary anim;}
 /* #open.active{@apply translate-x-0;} */
 #select_inpu.active, #select_inpu2.active,#select_gender.active{@apply visible opacity-100 translate-y-2;}
 .checkbox{@apply w-5 h-5 rounded border border-white flex items-center justify-center;}
@@ -54,20 +54,19 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
   
   .mySwiper .swiper-wrapper .swiper-slide{@apply opacity-50;}
   .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-active .swiper_content{@apply scale-100;}
-  .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-active {  
-    transform: scale(1.14) !important;
-    opacity: 1 !important;
+  .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-active {@apply scale-100 md:scale-[1.14] opacity-100;}
+  .fq_bg{@apply absolute w-full h-0 inset-0 rounded-lg bg-gradient-to-t from-white/30 -z-10;}
+  .title_tab.active{@apply border-transparent;}
+  .title_tab.active span.close {
+    display: block;
   }
-  
-.title_tab.active span.close {
-  display: block;
-}
-.title_tab.active span.open {
-    display: none;
-}
-/* .tab_main.active{@apply border-b-0 border-transparent;
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-} */
+  .title_tab.active span.open {
+      display: none;
+  }
+  /* .tab_main.active{@apply border-b-0 border-transparent;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  } */
+  .title_tab.active + .inner_content + .fq_bg{@apply h-full;}
 
   .tossing {
     animation-name: tossing;
@@ -97,7 +96,7 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
     }
   
     50%{
-      transform: translateY(-30px) rotate(-360deg) translateX(-25px);
+      transform: translateY(-80px) rotate(-360deg) translateX(-60px)scale(0);
       animation-timing-function: cubic-bezier(0,0,0.1,1);
     }
     100%{

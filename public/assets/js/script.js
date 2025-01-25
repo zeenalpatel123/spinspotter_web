@@ -72,17 +72,13 @@ var swiper = new Swiper(".mySwiper2", {
     $('.title_tab.active').next().slideDown();
     $('.title_tab').click(function(j) {   
       if ($(this).hasClass('active')) {
-        $('.tab_main').addClass('active');
         $('.title_tab').removeClass('active');
-        $('.tab_main').removeClass('active');
         $(this).next().slideUp();
       }
       else {
         $('.title_tab').removeClass('active');
-        $('.tab_main').removeClass('active');
         $('.inner_content').slideUp();
         $(this).addClass('active');
-        $('.tab_main').addClass('active');
         $(this).next().slideDown();
       }     
     });
