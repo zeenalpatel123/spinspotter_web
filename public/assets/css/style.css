@@ -1859,13 +1859,6 @@ input:checked + .checkbox span, input:checked + .radio span{
   -webkit-line-clamp: 3;
 }
 
-.line-clamp-2{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
 .block{
   display: block;
 }
@@ -1964,14 +1957,6 @@ input:checked + .checkbox span, input:checked + .radio span{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-32{
-  height: 8rem;
-}
-
-.h-28{
-  height: 7rem;
 }
 
 .min-h-\[150px\]{
@@ -2075,22 +2060,6 @@ input:checked + .checkbox span, input:checked + .radio span{
   width: max-content;
 }
 
-.w-5\/12{
-  width: 41.666667%;
-}
-
-.w-7\/12{
-  width: 58.333333%;
-}
-
-.w-32{
-  width: 8rem;
-}
-
-.w-28{
-  width: 7rem;
-}
-
 .max-w-14{
   max-width: 3.5rem;
 }
@@ -2177,10 +2146,6 @@ input:checked + .checkbox span, input:checked + .radio span{
 
 .max-w-sm{
   max-width: 24rem;
-}
-
-.max-w-\[460px\]{
-  max-width: 460px;
 }
 
 .-translate-x-1\/2{
@@ -2923,14 +2888,6 @@ input:checked + .checkbox span, input:checked + .radio span{
   padding-top: 1.75rem;
 }
 
-.pl-6{
-  padding-left: 1.5rem;
-}
-
-.pl-3\.5{
-  padding-left: 0.875rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -3535,10 +3492,6 @@ input:checked + .checkbox span, input:checked + .radio span{
 
   .md\:max-w-\[193px\]{
     max-width: 193px;
-  }
-
-  .md\:max-w-\[460px\]{
-    max-width: 460px;
   }
 
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -4265,10 +4218,6 @@ input:checked + .checkbox span, input:checked + .radio span{
     padding-top: 2rem;
   }
 
-  .lg\:pl-4{
-    padding-left: 1rem;
-  }
-
   .lg\:text-end{
     text-align: end;
   }
@@ -4525,20 +4474,8 @@ input:checked + .checkbox span, input:checked + .radio span{
     height: 410px;
   }
 
-  .\32xl\:h-\[150px\]{
-    height: 150px;
-  }
-
   .\32xl\:w-1\/6{
     width: 16.666667%;
-  }
-
-  .\32xl\:w-\[150px\]{
-    width: 150px;
-  }
-
-  .\32xl\:pl-6{
-    padding-left: 1.5rem;
   }
 
   .\32xl\:text-36{
@@ -4549,11 +4486,6 @@ input:checked + .checkbox span, input:checked + .radio span{
   .\32xl\:text-48{
     font-size: 48px;
     line-height: 56px;
-  }
-
-  .\32xl\:text-16{
-    font-size: 16px;
-    line-height: 22px;
   }
 }
 
