@@ -1974,10 +1974,6 @@ input:checked + .checkbox span, input:checked + .radio span{
   height: 100vh;
 }
 
-.min-h-\[150px\]{
-  min-height: 150px;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
