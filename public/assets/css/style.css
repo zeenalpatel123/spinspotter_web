@@ -1475,6 +1475,36 @@ input:checked + .checkbox span, input:checked + .radio span{
   }
 }
 
+/* date select start */
+
+.days{
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.2);
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity, 1));
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1024px){
+  .days{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+input:checked + .days{
+  background: linear-gradient(360deg, #00CF77 0%, rgba(0, 207, 119, 0) 100%);
+  border: 0px solid rgba(0,0,0,0.01);
+}
+
 /* tab menu faqs css  */
 
 .title_tab.active span.close {

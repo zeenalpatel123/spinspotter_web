@@ -96,7 +96,6 @@ breakpoints: {
 });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  centeredSlides: true,
     spaceBetween: 16,
     slidesPerView: 3,
     loop: true,

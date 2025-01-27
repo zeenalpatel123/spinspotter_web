@@ -113,6 +113,13 @@ input:checked + .checkbox span, input:checked + .radio span{@apply opacity-100;}
 .grid_container.active .content_card .card_text_left, .grid_container.active .content_card .card_text_right{@apply w-full;}
 .content_card .card_text_right{@apply w-full md:w-40 flex text-right sm:justify-end md:flex-col;}
 
+/* date select start */
+.days{@apply cursor-pointer py-2.5 lg:py-3.5 px-5 lg:px-7 bg-dark2 rounded-lg inline-block border border-white/20;}
+input:checked + .days{
+  background: linear-gradient(360deg, #00CF77 0%, rgba(0, 207, 119, 0) 100%);  
+  border: 0px solid rgba(0,0,0,0.01);
+}
+
   /* tab menu faqs css  */
 .title_tab.active span.close {
   display: block;
