@@ -69,19 +69,23 @@ var swiper = new Swiper(".mySwiper2", {
   // swiper 4 
 var swiper = new Swiper(".mySwiper4", {
   loop: true,
-slidesPerView: 7,
+slidesPerView: 3,
 spaceBetween: 10,
 pagination: {
   el: ".swiper-pagination",
   clickable: true,
 },
 breakpoints: {
+  450: {
+    slidesPerView: 4,
+    spaceBetween: 10,
+  },
   640: {
-    slidesPerView: 2,
+    slidesPerView: 5,
     spaceBetween: 10,
   },
   768: {
-    slidesPerView: 4,
+    slidesPerView: 6,
     spaceBetween: 20,
   },
   1024: {
