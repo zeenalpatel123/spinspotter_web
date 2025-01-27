@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/icomoon.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
-<body>
+<body class="hidden">
     <section>
         <div class="warrper max-w-[950px] py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20 space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
             <div class="flex items-center space-x-4 mb-3 md:mb-5 lg:mb-7">
@@ -105,18 +105,53 @@
                             </div>
                             <div class="space-y-2.5">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase">Select Play Area</h6>
-                                <div class="flex items-center space-x-2 md:space-x-3 lg:space-x-5">
-                                    <div class="py-3.5 px-4 gra_green rounded-lg inline-block">
-                                        <span class="block text-white text16 font-normal">Turf 1 (9:9)</span>
+                                <div class="flex items-center">
+                                    <div class="p-1.5">
+                                        <div class="relative">
+                                            <input type="radio" class="absolute inset-0 w-full h-full opacity-0 z-10 cursor-pointer" name="area" checked/>
+                                            <div class="area">
+                                                <span class="block text-white text16 font-normal">Turf 1 (9:9)</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="py-3.5 px-4 bg-dark2 rounded-lg inline-block border border-white/20">
-                                        <span class="block text-white text16 font-normal">Turf 2 (7:7)</span>
+                                    <div class="p-1.5">
+                                        <div class="relative">
+                                            <input type="radio" class="absolute inset-0 w-full h-full opacity-0 z-10 cursor-pointer" name="area"/>
+                                            <div class="area">
+                                                <span class="block text-white text16 font-normal">Turf 2 (7:7)</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="space-y-2.5">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase">Select Slots</h6>
-                                <div class="flex flex-wrap items-center -mx-2 md:-mx-3.5">
+                                <div class="flex items-center">
+                                    <ul class="bg-m1 tab_hover overflow-x-auto tab-holder space-y-3 shadow-shadow_2 w-2/12">
+                                        <li class="relative tab_slot flex items-center space-x-2.5 rounded-lg py-1.5 px-2.5">
+                                            <span class="icon-cloud text-white text-18 md:text-20 lg:text-24 relative z-10"></span>
+                                            <a href="javascript:void(0)" class="text-white relative z-10 text-14 lg:text-16 font-medium text-nowrap block anim text-center" data-tab="tab_slot1">Morning</a>
+                                        </li>
+                                        <li class="relative flex items-center space-x-2.5">
+                                            <span class="icon-sun text-white text-18 md:text-20 lg:text-24"></span>
+                                            <a href="javascript:void(0)" class="text-white text-14 lg:text-16 font-medium text-nowrap block anim text-center" data-tab="tab_slot2">Afternoon</a>
+                                        </li>
+                                        <li class="relative flex items-center space-x-2.5">
+                                            <span class="icon-evening text-white text-18 md:text-20 lg:text-24"></span>
+                                            <a href="javascript:void(0)" class="text-white text-14 lg:text-16 font-medium text-nowrap block anim text-center" data-tab="tab_slot3">Evening</a>
+                                        </li>
+                                        <li class="relative flex items-center space-x-2.5">
+                                            <span class="icon-moon text-white text-18 md:text-20 lg:text-24"></span>
+                                            <a href="javascript:void(0)" class="text-white text-14 lg:text-16 font-medium text-nowrap block anim text-center" data-tab="tab_slot4">Night</a>
+                                        </li>
+                                    </ul>
+                                    <div class="w-10/12 mt-5">
+                                        <div id="tab_slot1" class="tab-main hidden active space-y-7">
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center -mx-2 md:-mx-3.5 hidden">
                                     <div class="w-full md:w-3/12 p-2 py-0 md:p-3.5">
                                         <div class="space-y-1 border-0 md:border-r border-g1 flex flex-wrap md:block">
                                             <div class="py-2 lg:py-3.5 px-2 lg:px-4 gra_green rounded-lg flex items-center space-x-1 md:space-x-2.5 w-full max-w-36">
@@ -249,5 +284,19 @@
         <img src="assets/images/download_panel_img.png" class="absolute inset-0 w-full h-full object-cover" alt="download_panel_img">
     </section>
 </body>
+<script>
+    // jquery script
+$(document).ready(function () {
+  $('.tab-holder button').click(function () {
+    var tab_id = $(this).attr('data-tab');
+    $('.tab-holder button').removeClass('active');
+    $('.tab-main').removeClass('active');
+    $(this).addClass('active');
+    $("#" + tab_id).addClass('active');
+  });
+});
+
+</script>
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
 </html>

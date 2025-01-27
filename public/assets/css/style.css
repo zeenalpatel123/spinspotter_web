@@ -1500,9 +1500,54 @@ input:checked + .checkbox span, input:checked + .radio span{
   }
 }
 
-input:checked + .days{
+.area{
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.2);
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity, 1));
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1024px){
+  .area{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+input:checked + .days, input:checked + .area{
   background: linear-gradient(360deg, #00CF77 0%, rgba(0, 207, 119, 0) 100%);
   border: 0px solid rgba(0,0,0,0.01);
+}
+
+.tab_hover .tab_slot::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background: #00CF77; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s all;
+}
+
+.tab_hover .tab_slot.active::after, .tab_slot:hover::after{
+  width: 100%;
+  height: 100%;
+  background : #00CF77;
+  color: #fff;
+}
+
+.tab_hover .tab_slot li a.active{
+  color: #00CF77;
 }
 
 /* tab menu faqs css  */
@@ -1944,6 +1989,10 @@ input:checked + .days{
   height: 4rem;
 }
 
+.h-20{
+  height: 5rem;
+}
+
 .h-24{
   height: 6rem;
 }
@@ -2024,12 +2073,20 @@ input:checked + .days{
   width: 2.5rem;
 }
 
+.w-10\/12{
+  width: 83.333333%;
+}
+
 .w-12{
   width: 3rem;
 }
 
 .w-16{
   width: 4rem;
+}
+
+.w-2\/12{
+  width: 16.666667%;
 }
 
 .w-24{
@@ -2699,10 +2756,6 @@ input:checked + .days{
      object-fit: cover;
 }
 
-.p-0{
-  padding: 0px;
-}
-
 .p-0\.5{
   padding: 0.125rem;
 }
@@ -2896,10 +2949,6 @@ input:checked + .days{
   padding-bottom: 2rem;
 }
 
-.pl-0{
-  padding-left: 0px;
-}
-
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -2938,10 +2987,6 @@ input:checked + .days{
 
 .pt-2{
   padding-top: 0.5rem;
-}
-
-.pt-2\.5{
-  padding-top: 0.625rem;
 }
 
 .pt-4{
@@ -3220,16 +3265,16 @@ input:checked + .days{
     margin-left: auto;
   }
 
+  .xs\:h-24{
+    height: 6rem;
+  }
+
   .xs\:w-1\/2{
     width: 50%;
   }
 
-  .xs\:w-3\/12{
-    width: 25%;
-  }
-
-  .xs\:w-9\/12{
-    width: 75%;
+  .xs\:w-32{
+    width: 8rem;
   }
 
   .xs\:w-auto{
@@ -3248,14 +3293,6 @@ input:checked + .days{
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .xs\:p-2\.5{
-    padding: 0.625rem;
-  }
-
-  .xs\:pl-3{
-    padding-left: 0.75rem;
   }
 
   .xs\:pt-0{
@@ -3352,6 +3389,10 @@ input:checked + .days{
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
+  .sm\:rounded-\[10px\]{
+    border-radius: 10px;
+  }
+
   .sm\:border-r{
     border-right-width: 1px;
   }
@@ -3403,11 +3444,6 @@ input:checked + .days{
   .sm\:text-18{
     font-size: 18px;
     line-height: 26px;
-  }
-
-  .sm\:text-20{
-    font-size: 20px;
-    line-height: 28px;
   }
 
   .sm\:text-28{
@@ -3502,6 +3538,10 @@ input:checked + .days{
     height: 6rem;
   }
 
+  .md\:h-28{
+    height: 7rem;
+  }
+
   .md\:h-36{
     height: 9rem;
   }
@@ -3544,6 +3584,10 @@ input:checked + .days{
 
   .md\:w-36{
     width: 9rem;
+  }
+
+  .md\:w-44{
+    width: 11rem;
   }
 
   .md\:w-5\/12{
@@ -4349,10 +4393,6 @@ input:checked + .days{
     padding-left: 1rem;
   }
 
-  .lg\:pl-7{
-    padding-left: 1.75rem;
-  }
-
   .lg\:pt-16{
     padding-top: 4rem;
   }
@@ -4677,6 +4717,10 @@ input:checked + .days{
 
   .\32xl\:w-\[150px\]{
     width: 150px;
+  }
+
+  .\32xl\:w-\[230px\]{
+    width: 230px;
   }
 
   .\32xl\:w-\[266px\]{
