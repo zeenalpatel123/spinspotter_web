@@ -1300,6 +1300,23 @@ input:checked + .checkbox span, input:checked + .radio span{
   }
 }
 
+.content_card .card_text_left .price{
+  font-family: Oswald, serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(0 207 119 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px){
+  .content_card .card_text_left .price{
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 .content_card .card_text_right{
   display: flex;
   width: 100%;
@@ -1442,37 +1459,142 @@ input:checked + .checkbox span, input:checked + .radio span{
 .grid_container.active .content_card{
   position: absolute;
   inset: 0px;
+  display: flex;
   height: 100%;
   width: 100%;
+  align-items: flex-end;
   padding: 0.75rem;
 }
 
-.grid_container.active  .content_card .card_con{
-  display: block;
+.grid_container.active .content_card .card_con{
   width: 100%;
+}
+
+.grid_container.active .content_card .card_text_left h4{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  width: calc(100% - 100px);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1024px){
+  .grid_container.active .content_card .card_text_left h4{
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1536px){
+  .grid_container.active .content_card .card_text_left h4{
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.grid_container.active .content_card .card_text_left{
+  position: relative;
+  order: 2;
+}
+
+.grid_container.active .content_card .card_text_left > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.grid_container.active .content_card .card_text_left .location_con{
+  justify-content: space-between;
+}
+
+.grid_container.active .content_card .card_text_left .price{
+  position: absolute;
+  right: 0px;
+  top: -2px;
 }
 
 .grid_container.active .content_card .card_text_left, .grid_container.active .content_card .card_text_right{
   width: 100%;
 }
 
-.content_card .card_text_right{
+.grid_container.active .content_card .card_text_right{
+  order: 1;
   display: flex;
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 @media (min-width: 640px){
-  .content_card .card_text_right{
-    justify-content: flex-end;
+  .grid_container.active .content_card .card_text_right{
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 768px){
-  .content_card .card_text_right{
+  .grid_container.active .content_card .card_text_right{
     width: 10rem;
     flex-direction: column;
   }
+}
+
+.grid_container.active .content_card .card_text_right .share_items{
+  margin-bottom: 0.25rem;
+  justify-content: flex-start;
+  position: unset;
+}
+
+.grid_container.active .content_card .card_text_right .share_items div{
+  position: absolute;
+  top: 0.875rem;
+  right: 0.875rem;
+  --tw-translate-y: -5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
+.grid_container.active .content_card .card_text_right .share_items div a{
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(215 32 40 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 32 40 / var(--tw-bg-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.grid_container.active .content_card .card_text_right .share_items div a:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.grid_container.active .content_card .card_text_right .btn_primary{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0px;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
+.grid_container.active .content_card:hover .card_text_right .btn_primary{
+  opacity: 1;
+}
+
+.grid_container.active .content_card:hover .card_text_right .share_items div{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
 }
 
 /* date select start */
