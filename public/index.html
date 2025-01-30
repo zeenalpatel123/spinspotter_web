@@ -10,18 +10,20 @@
 </head>
 <body>
     <div class="relative min-h-screen overflow-hidden">
-        <header class="py-5 lg:py-7 relative z-10">
-            <div class="warrper">
-                <div class="flex items-center justify-between">
-                    <a href="#">
-                        <img src="assets/images/logo.png" class="max-w-44 lg:max-w-full" alt="logo"/>
-                    </a>
-                    <a href="#">
-                        <span class="icon-menu text-white text-32" onclick="toggleActive('#open','translate-x-full');"></span>
-                    </a>
+        <div class="fixed w-full z-20" id="main_header">
+            <header class="py-5 lg:py-7 relative z-10 bg-transparent">
+                <div class="warrper">
+                    <div class="flex items-center justify-between">
+                        <a href="#">
+                            <img src="assets/images/logo.png" class="max-w-44 lg:max-w-full" alt="logo"/>
+                        </a>
+                        <a href="#">
+                            <span class="icon-menu text-white text-32" onclick="toggleActive('#open','translate-x-full');"></span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
         <div class="fixed inset-y-0 right-0 w-full max-w-screen-md h-screen overflow-y-auto bg-primary/90 p-5 py-24 z-50 translate-x-full flex items-center justify-center anim" id="open">
             <a href="#" class="absolute top-6 2xl:top-8 right-5 2xl:right-14 bg-black rounded-md flex items-center justify-center w-9 md:w-10 lg:w-12 h-9 md:h-10 lg:h-12" onclick="toggleActive('#open','translate-x-full');">
                 <span class="icon-close text-38 md:text-48 text-white"></span>
@@ -757,45 +759,45 @@
             <h2 class="text-center">Got Questions? We've Got Answers!</h2>
             <div class="w-full">
                 <div class="tab_main relative">
-                    <div class="anim title_tab border-b border-white p-5 pb-3.5 flex items-center justify-between active">
+                    <div class="anim faqs_title border-b border-white p-5 pb-3.5 flex items-center justify-between active">
                         <h5>What is SpinSpotter?</h5>
                         <span class="icon-plus text-18 md:text-20 lg:text-24 text-white open"></span>
                         <span class="icon-minus text-18 md:text-20 lg:text-24 text-white hidden close"></span>
                     </div>
-                    <div class="inner_content p-5 pt-0 hidden">
+                    <div class="faqs_content p-5 pt-0 hidden">
                         <p class="text16 text-[#F5F8E5] font-normal capitalize">SpinSpotter is a platform that helps you find, book, and manage sports grounds. Whether you’re a player, organizer, or ground owner, we provide seamless solutions tailored to your needs.</p>
                     </div>
                     <span class="fq_bg"></span>
                 </div>
                 <div class="tab_main relative">
-                    <div class="title_tab border-b border-white p-5 pb-3.5 flex items-center justify-between">
+                    <div class="faqs_title border-b border-white p-5 pb-3.5 flex items-center justify-between">
                         <h5>How do I book a sports ground?</h5>
                         <span class="icon-plus text-18 md:text-20 lg:text-24 text-white open"></span>
                         <span class="icon-minus text-18 md:text-20 lg:text-24 text-white hidden close"></span>
                     </div>
-                    <div class="inner_content p-5 pt-0 hidden">
+                    <div class="faqs_content p-5 pt-0 hidden">
                         <p class="text16 text-[#F5F8E5] font-normal capitalize">SpinSpotter is a platform that helps you find, book, and manage sports grounds. Whether you’re a player, organizer, or ground owner, we provide seamless solutions tailored to your needs.</p>
                     </div>
                     <span class="fq_bg"></span>
                 </div>
                 <div class="tab_main relative">
-                    <div class="title_tab border-b border-white p-5 pb-3.5 flex items-center justify-between">
+                    <div class="faqs_title border-b border-white p-5 pb-3.5 flex items-center justify-between">
                         <h5>Can I book grounds for multiple sports?</h5>
                         <span class="icon-plus text-18 md:text-20 lg:text-24 text-white open"></span>
                         <span class="icon-minus text-18 md:text-20 lg:text-24 text-white hidden close"></span>
                     </div>
-                    <div class="inner_content p-5 pt-0 hidden">
+                    <div class="faqs_content p-5 pt-0 hidden">
                         <p class="text16 text-[#F5F8E5] font-normal capitalize">SpinSpotter is a platform that helps you find, book, and manage sports grounds. Whether you’re a player, organizer, or ground owner, we provide seamless solutions tailored to your needs.</p>
                     </div>
                     <span class="fq_bg"></span>
                 </div>
                 <div class="tab_main relative">
-                    <div class="title_tab border-b border-white p-5 pb-3.5 flex items-center justify-between">
+                    <div class="faqs_title border-b border-white p-5 pb-3.5 flex items-center justify-between">
                         <h5>How can I manage my ground bookings as an owner?</h5>
                         <span class="icon-plus text-18 md:text-20 lg:text-24 text-white open"></span>
                         <span class="icon-minus text-18 md:text-20 lg:text-24 text-white hidden close"></span>
                     </div>
-                    <div class="inner_content p-5 pt-0 hidden">
+                    <div class="faqs_content p-5 pt-0 hidden">
                         <p class="text16 text-[#F5F8E5] font-normal capitalize">SpinSpotter is a platform that helps you find, book, and manage sports grounds. Whether you’re a player, organizer, or ground owner, we provide seamless solutions tailored to your needs.</p>
                     </div>
                     <span class="fq_bg"></span>
@@ -944,6 +946,24 @@
         </div>
     </footer>   
 </body>
+<script>
+        window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        var navbar = document.getElementById("main_header");          
+
+        if (prevScrollpos > currentScrollPos) {
+        navbar?.classList.remove("header_down");
+        navbar?.classList.add("header_up");
+        } else {
+        navbar?.classList.remove("header_up");
+        navbar?.classList.add("header_down");
+        }
+        prevScrollpos = currentScrollPos;
+    }
+    if (window.innerWidth <= 450) {
+        var prevScrollpos = window.pageYOffset;
+    };
+</script>
 <!-- swiper js  -->
 <script src="assets/js/swiper-bundle.min.js"></script>
 <!-- jquery js  -->

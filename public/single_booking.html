@@ -19,7 +19,7 @@
             </div>
             <div class="bg-dark p-4 lg:p-6 xl:p-8 rounded-md lg:rounded-[10px]">
                 <div>
-                    <ul class="bg-m1 tab_hover overflow-x-auto tab-holder w-full mx-auto flex items-center justify-center space-x-10">
+                    <ul class="bg-m1 tab_hover overflow-x-auto tab_book w-full mx-auto flex items-center justify-center space-x-10">
                         <li class="relative w-1/2">
                             <a href="javascript:void(0)" class="active text-white hover:text-secondary uppercase text-16 lg:text-18 font-oswald font-medium py-4 text-nowrap block anim text-center" data-tab="tab-1">Single Booking</a>
                         </li>
@@ -306,7 +306,7 @@
                             <div class="space-y-2.5 hidden">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase">Select Slots</h6>
                                 <div class="flex items-center">
-                                    <ul class="bg-m1 tab_hover overflow-x-auto tab-holder space-y-3 shadow-shadow_2 w-2/12">
+                                    <ul class="bg-m1 tab_hover overflow-x-auto tab_book space-y-3 shadow-shadow_2 w-2/12">
                                         <li class="relative tab_slot flex items-center space-x-2.5 rounded-lg py-1.5 px-2.5">
                                             <span class="icon-cloud text-white text-18 md:text-20 lg:text-24 relative z-10"></span>
                                             <a href="javascript:void(0)" class="text-white relative z-10 text-14 lg:text-16 font-medium text-nowrap block anim text-center" data-tab="tab_slot1">Morning</a>
@@ -468,9 +468,9 @@
 <script>
 
 $(document).ready(function () {
-  $('.tab-holder li a').click(function () {
+  $('.tab_book li a').click(function () {
   var tab_id = $(this).attr('data-tab');
-  $('.tab-holder li a').removeClass('active');
+  $('.tab_book li a').removeClass('active');
   $('.tab-main').removeClass('active');
   $(this).addClass('active');
   $("#" + tab_id).addClass('active');

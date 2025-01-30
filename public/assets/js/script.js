@@ -140,16 +140,16 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 
 // faqs tab script start
   $(function() {
-    $('.inner_content').slideUp();
-    $('.title_tab.active').next().slideDown();
-    $('.title_tab').click(function(j) {   
+    $('.faqs_content').slideUp();
+    $('.faqs_title.active').next().slideDown();
+    $('.faqs_title').click(function(j) {   
       if ($(this).hasClass('active')) {
-        $('.title_tab').removeClass('active');
+        $('.faqs_title').removeClass('active');
         $(this).next().slideUp();
       }
       else {
-        $('.title_tab').removeClass('active');
-        $('.inner_content').slideUp();
+        $('.faqs_title').removeClass('active');
+        $('.faqs_content').slideUp();
         $(this).addClass('active');
         $(this).next().slideDown();
       }     
@@ -159,9 +159,9 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 
 // my booking tabs start
   $(document).ready(function () {
-    $('.tab-holder li a').click(function () {
+    $('.tab_book li a').click(function () {
     var tab_id = $(this).attr('data-tab');
-    $('.tab-holder li a').removeClass('active');
+    $('.tab_book li a').removeClass('active');
     $('.tab-main').removeClass('active');
     $(this).addClass('active');
     $("#" + tab_id).addClass('active');
@@ -169,9 +169,9 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     });
 
   $(document).ready(function () {
-    $('.tab-holder2 li a').click(function () {
+    $('.tab_book2 li a').click(function () {
     var tab_id = $(this).attr('data-tab');
-    $('.tab-holder2 li a').removeClass('active');
+    $('.tab_book2 li a').removeClass('active');
     $('.tab-main2').removeClass('active');
     $(this).addClass('active');
     $("#" + tab_id).addClass('active');
