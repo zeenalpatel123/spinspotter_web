@@ -24,6 +24,7 @@ body{@apply bg-[#0A0909];}
 /* filter sidebar open hide scrollbar css  end */
 
 /* input , checkbox and radio css  */
+.label{@apply text-primary font-semibold inline-block text-14 lg:text-16 mb-1.5 md:mb-2.5 uppercase;}
 .input{@apply border border-white bg-black/20 capitalize outline-none text16 text-g2 font-normal py-1.5 md:py-2 lg:py-3.5 px-2.5 md:px-3 lg:px-5 w-full rounded-md md:rounded-[10px];}
 #select_inpu.active, #select_inpu2.active,#select_gender.active{@apply visible opacity-100 translate-y-2;}
 .checkbox{@apply w-5 h-5 rounded border border-white flex items-center justify-center;}

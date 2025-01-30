@@ -3,7 +3,7 @@ function toggleActive(Id, db) {
     var element = document.querySelector(Id);
     element.classList.toggle(db);
     }
-// swiper 1 
+// swiper 1 start
 var swiper = new Swiper('.mySwiper', {
     loop: true,
     slidesPerView: 1,
@@ -38,7 +38,9 @@ var swiper = new Swiper('.mySwiper', {
         },
         }
     });
-// swiper 2 
+// swiper 1 end
+
+// swiper 2 start
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -56,18 +58,23 @@ var swiper = new Swiper(".mySwiper2", {
         spaceBetween: 12,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 12,
       },
       1024: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+      1280: {
         slidesPerView: 4,
         spaceBetween: 12,
       },
     },
   });
+// swiper 2 end
 
-  // swiper 4 
-var swiper = new Swiper(".mySwiper4", {
+  // swiper 3 start
+var swiper = new Swiper(".mySwiper3", {
   loop: true,
 slidesPerView: 3,
 spaceBetween: 10,
@@ -94,6 +101,19 @@ breakpoints: {
   },
 },
 });
+  // swiper 3 end
+
+  // swiper 4 start
+  var swiper = new Swiper(".mySwiper4", {
+    loop: true,
+    grabCursor: true,
+    speed: 1500,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  // swiper 4 end
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 16,
@@ -117,16 +137,8 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     },
   });
 
-  var swiper = new Swiper(".mySwiper5", {
-    loop: true,
-    grabCursor: true,
-    speed: 1500,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-// faqs tab script 
+
+// faqs tab script start
   $(function() {
     $('.inner_content').slideUp();
     $('.title_tab.active').next().slideDown();
@@ -143,4 +155,26 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
       }     
     });
   });
+// faqs tab script ebd
 
+// my booking tabs start
+  $(document).ready(function () {
+    $('.tab-holder li a').click(function () {
+    var tab_id = $(this).attr('data-tab');
+    $('.tab-holder li a').removeClass('active');
+    $('.tab-main').removeClass('active');
+    $(this).addClass('active');
+    $("#" + tab_id).addClass('active');
+    });
+    });
+
+  $(document).ready(function () {
+    $('.tab-holder2 li a').click(function () {
+    var tab_id = $(this).attr('data-tab');
+    $('.tab-holder2 li a').removeClass('active');
+    $('.tab-main2').removeClass('active');
+    $(this).addClass('active');
+    $("#" + tab_id).addClass('active');
+    });
+    });
+// my booking tabs end

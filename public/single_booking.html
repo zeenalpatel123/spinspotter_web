@@ -27,9 +27,9 @@
                             <a href="javascript:void(0)" class="text-white hover:text-secondary uppercase text-16 lg:text-18 font-oswald font-medium py-4 text-nowrap block anim text-center" data-tab="tab-2">Bulk Booking</a>
                         </li>
                     </ul>
-                    <div class="w-full mt-12">
+                    <div class="w-full mt-6 md:mt-8 2xl:mt-10">
                         <div id="tab-1" class="tab-main hidden active space-y-7">
-                            <div class="swiper mySwiper4">
+                            <div class="swiper mySwiper3">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
                                     <div class="space-y-3 text-center px-5 py-2.5 bg-[#0A0909]">
@@ -117,7 +117,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="space-y-2.5">
+                            <!-- select slot code start  -->
+                            <div class="space-y-2.5 hidden">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase font-oswald">Select Slots</h6>
                                 <div class="flex flex-wrap items-center -mx-2 md:-mx-3.5">
                                     <div class="w-full md:w-3/12 p-2 py-0 md:p-3.5">
@@ -200,23 +201,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- select slot code end  -->
                         </div>
                         <div id="tab-2" class="tab-main hidden space-y-7">
-                            <form class="flex flex-wrap items-center -mx-2">
-                                <div class="w-full p-2">
-                                    <label class="text-primary font-semibold inline-block text-14 lg:text-16 mb-2.5 md:mb-4 lg:mb-6">Select Duration <span class="text-secondary">*</span></label>
+                            <form class="flex flex-wrap items-center -mx-2.5 lg:-mx-3.5">
+                                <div class="w-full p-2.5 lg:p-3.5">
+                                    <label class="label">Select Duration <span class="text-secondary">*</span></label>
                                     <input placeholder="Select Duration" type="text" class="input"/>
                                 </div>
-                                <div class="w-full xs:w-1/2 p-2">
-                                    <label class="text-primary font-semibold inline-block text-14 lg:text-16 mb-2.5 md:mb-4 lg:mb-6">START DATE <span class="text-secondary">*</span></label>
+                                <div class="w-full xs:w-1/2 p-2.5 lg:p-3.5">
+                                    <label class="label">START DATE <span class="text-secondary">*</span></label>
                                     <input placeholder="01/01/2025" type="text" class="input"/>
                                 </div>
-                                <div class="w-full xs:w-1/2 p-2">
-                                    <label class="text-primary font-semibold inline-block text-14 lg:text-16 mb-2.5 md:mb-4 lg:mb-6">END DATE <span class="text-secondary">*</span></label>
+                                <div class="w-full xs:w-1/2 p-2.5 lg:p-3.5">
+                                    <label class="label">END DATE <span class="text-secondary">*</span></label>
                                     <input placeholder="01/01/2025" type="text" class="input"/>
                                 </div>
                             </form>
-                            <div class="space-y-2.5">
+                            <!-- select day code start  -->
+                            <div class="space-y-2.5 hidden">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase">Select DAYS</h6>
                                 <div class="flex flex-wrap items-center">
                                     <div class="p-1.5">
@@ -277,6 +280,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- select day code end  -->
                             <div class="space-y-2.5">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase">Select Play Area</h6>
                                 <div class="flex items-center">
@@ -298,7 +302,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="space-y-2.5">
+                            <!-- select slot code start  -->
+                            <div class="space-y-2.5 hidden">
                                 <h6 class="text-14 md:text-16 font-semibold text-primary uppercase">Select Slots</h6>
                                 <div class="flex items-center">
                                     <ul class="bg-m1 tab_hover overflow-x-auto tab-holder space-y-3 shadow-shadow_2 w-2/12">
@@ -406,6 +411,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- select slot code end  -->
                         </div>
                     </div>
                 </div>
