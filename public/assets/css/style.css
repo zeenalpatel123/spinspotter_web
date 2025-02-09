@@ -3405,6 +3405,10 @@ input:checked + .days, input:checked + .area{
   text-transform: capitalize;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .tracking-wider{
   letter-spacing: 0.05em;
 }
@@ -3665,10 +3669,6 @@ input:checked + .days, input:checked + .area{
 
   .xs\:bg-transparent{
     background-color: transparent;
-  }
-
-  .xs\:text-left{
-    text-align: left;
   }
 
   .xs\:text-end{
@@ -4354,6 +4354,11 @@ input:checked + .days, input:checked + .area{
   .md\:text-24{
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .md\:text-28{
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
