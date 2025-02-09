@@ -6,7 +6,7 @@
 body{@apply bg-[#0A0909];}
 .warrper{@apply w-full max-w-[1440px] mx-auto px-5;}
 .h1,h1{@apply text-34 md:text-38 lg:text-48 xl:text-52 2xl:text-68 font-oswald font-bold text-white uppercase;}
-.h2,h2{@apply text-24 md:text-28 lg:text-34 xl:text-40 2xl:text-48 font-oswald  font-semibold text-white uppercase;}
+.h2,h2{@apply text-22 md:text-26 lg:text-30 xl:text-38 2xl:text-48 font-oswald  font-semibold text-white uppercase;}
 .h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-oswald  font-bold uppercase text-white;}
 .h4,h4{@apply text-16 md:text-18 lg:text-20 2xl:text-24 font-oswald  font-semibold text-white uppercase;}
 .h5,h5{@apply text-14 lg:text-16 2xl:text-18 font-oswald font-semibold text-white uppercase;}
@@ -27,6 +27,16 @@ body{@apply bg-[#0A0909];}
 #main_header.header_down{@apply -translate-y-full;}
 
 /* filter sidebar open hide scrollbar css  end */
+
+/* slide toggle payment  */
+.toggle-slide {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0; 
+}
+
+/* swiper_button  */
+.next, .prev{@apply cursor-pointer w-7 h-7 lg:w-9 lg:h-9 rounded-full bg-secondary border border-secondary flex items-center justify-center;}
 
 /* input , checkbox and radio css  */
 .label{@apply text-primary font-semibold uppercase font-oswald text-14 md:text-16 2xl:text-18 mb-1.5 md:mb-2.5 block;}
@@ -205,6 +215,7 @@ input:checked + .days, input:checked + .area{
   .tab_hover2 li a.active::after, .tab_hover li a:hover::after{
     width: 100%;
   }
+  .profile li a.active span{@apply text-secondary;}
   .tab_hover2 li a.active{
     color: #00CF77;
   }

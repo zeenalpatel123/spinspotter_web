@@ -2,7 +2,17 @@
 function toggleActive(Id, db) {
     var element = document.querySelector(Id);
     element.classList.toggle(db);
+  }
+
+  function toggleSlide(Id, db) {
+    var element = document.querySelector(Id);
+    if (element.style.maxHeight) {
+        element.style.maxHeight = null; // Collapse the element
+    } else {
+        element.style.maxHeight = element.scrollHeight + "px"; // Expand the element
     }
+    element.classList.toggle(db); // Optional: Toggle a class
+}
 // swiper 1 start
 var swiper = new Swiper('.mySwiper', {
     loop: true,
@@ -76,15 +86,19 @@ var swiper = new Swiper(".mySwiper2", {
   // swiper 3 start
 var swiper = new Swiper(".mySwiper3", {
   loop: true,
-slidesPerView: 3,
+slidesPerView: 2,
 spaceBetween: 10,
+navigation: {
+  nextEl: ".next",
+  prevEl: ".prev",
+},
 pagination: {
   el: ".swiper-pagination",
   clickable: true,
 },
 breakpoints: {
   450: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 10,
   },
   640: {
