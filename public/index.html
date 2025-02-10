@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="relative min-h-screen py-10 sm:py-12 md:py-16 lg:py-24 xl:py-28">
+        <div class="relative min-h-screen pt-32 lg:pt-24 xl:pt-28 py-16 lg:py-24 xl:py-28">
             <div class="warrper relative">
                 <div class="max-w-3xl mx-auto">
                     <h1 class="text-center mb-4 md:mb-6 lg:mb-8">Find Your Perfect Sports Ground with Ease!</h1>
@@ -64,8 +64,14 @@
                 </div>
             </div>
         </div>
-        <video loop muted autoplay class="absolute inset-0 w-full h-full object-cover -z-10">
+        <video loop muted autoplay class="absolute inset-0 w-full h-full object-cover hidden xl:block -z-10">
             <source src="assets/images/hero.mp4" type="video/mp4"/>
+        </video>
+        <video loop muted autoplay class="absolute inset-0 w-full h-full object-cover hidden md:block xl:hidden -z-10">
+            <source src="assets/images/hero_tab.mp4" type="video/mp4"/>
+        </video>
+        <video loop muted autoplay class="absolute inset-0 w-full h-full object-cover block md:hidden -z-10">
+            <source src="assets/images/hero_mob.mp4" type="video/mp4"/>
         </video>
     </div>
     <section class="pt-10 sm:pt-12 md:pt-14 lg:pt-16 xl:pt-20">

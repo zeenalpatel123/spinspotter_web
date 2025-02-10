@@ -3164,6 +3164,11 @@ input:checked + .days, input:checked + .area{
   padding-bottom: 3.5rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3276,6 +3281,10 @@ input:checked + .days, input:checked + .area{
 
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
 }
 
 .pt-4{
@@ -3975,6 +3984,10 @@ input:checked + .days, input:checked + .area{
     display: block;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:h-10{
     height: 2.5rem;
   }
@@ -4239,11 +4252,6 @@ input:checked + .days, input:checked + .area{
   .md\:py-14{
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-  }
-
-  .md\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .md\:py-2{
@@ -4908,6 +4916,10 @@ input:checked + .days, input:checked + .area{
     padding-top: 4rem;
   }
 
+  .lg\:pt-24{
+    padding-top: 6rem;
+  }
+
   .lg\:pt-8{
     padding-top: 2rem;
   }
@@ -4990,6 +5002,14 @@ input:checked + .days, input:checked + .area{
 
   .xl\:mt-8{
     margin-top: 2rem;
+  }
+
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:hidden{
+    display: none;
   }
 
   .xl\:h-16{
@@ -5212,6 +5232,10 @@ input:checked + .days, input:checked + .area{
 
   .xl\:pt-20{
     padding-top: 5rem;
+  }
+
+  .xl\:pt-28{
+    padding-top: 7rem;
   }
 
   .xl\:text-14{
