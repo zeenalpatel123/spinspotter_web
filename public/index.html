@@ -877,7 +877,16 @@
                     <img src="assets/images/footer_logo.png" class="mx-auto" alt="footer_logo"/>
                 </a>
             </div>
-            <div class="flex flex-wrap -mx-2.5 pb-7 border-b border-white/50">
+            <ul class="flex pb-5 xl:pb-7 flex-wrap justify-center items-center -mx-3.5 xl:-mx-5 text16 text-white">
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim">About Us</a></li>
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim">Game Circle</a></li>
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim">Blogs & Article</a></li>
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim">Contact Us</a></li>
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim">Help & FAQs</a></li>
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim">Privacy Policy</a></li>
+                <li class="px-3.5 xl:px-5"><a href="" class="inline-block p-1.5 hover:text-secondary anim"> Terms & Conditions</a></li>
+            </ul>
+            <div class="flex flex-wrap -mx-2.5 pb-7 border-b border-white/50 hidden">
                 <div class="w-1/2 sm:w-1/3 md:w-1/4 p-2.5 ">
                     <div class="border-0 sm:border-r border-white/50 py-3 md:py-5 lg:py-7">
                         <h4 class="text-center">Connect With Us</h4>
@@ -955,7 +964,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-2 md:mt-4 lg:mt-6">
+            <div class="pt-3 md:pt-4 lg:pt-6 border-t border-white/50">
                 <p class="text16 text-[#CFCFCF] text-center">© 2025 SpinSpotter. All Rights Reserved.</p>
             </div>
         </div>
@@ -1222,35 +1231,119 @@
         <img src="assets/images/login_bg.png" class="absolute inset-0 w-full h-full object-cover -z-10" alt="login_bg"/>
     </div>
     <!-- Terms of use and privacy policy -->
+    <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur z-50 py-10 px-6 overflow-y-auto flex hidden">
+    <div class="w-full max-w-[599px] bg-dark py-6 md:py-10 lg:py-12 2xl:py-14 px-4 md:px-6 lg:px-8 2xl:px-10 m-auto relative flex flex-col">
+        <a href="" class="ml-auto md:absolute md:top-7 md:right-10">
+            <span class="icon-close text-22 text-white cursor-pointer"></span>
+        </a>
+        <div class="w-full space-y-5 2xl:space-y-7">
+            <h4 class="text-white font-oswald font-semibold uppercase">Terms of use and privacy policy</h4>
+            <div class="space-y-3.5 text-white text-14 2xl:text-16">
+                <p>1. Introduction<br> Welcome to SpinSpotter! By using our platform, you agree to comply with these policies regarding data collection, usage, user responsibilities, and legal terms. Please read carefully before using our services.</p>
+                <p>2. Information We Collect & How We Use It<br> We collect personal details (name, email, phone number, payment information), device data, and location-based information. This helps facilitate bookings, provide customer support, send notifications, and improve user experience while complying with legal obligations.</p>
+                <p>3. Data Security & Retention<br> We implement robust security measures to protect your data. However, no internet transmission is 100% secure. Data is retained as long as necessary to fulfill its intended purpose.</p>
+                <p>4. User Responsibilities & Account Management<br> Users must be at least 18 years old and provide accurate information. Account credentials should be kept confidential. SpinSpotter reserves the right to suspend accounts violating these terms.</p>
+                <p>5. Bookings, Payments & Cancellations<br> Users can browse and book sports grounds based on availability. Payments are processed securely via the platform, adhering to the ground owner's cancellation policy. SpinSpotter is not liable for disputes between users and ground owners.</p>
+                <p>6. Sharing & Third-Party Links<br> We share necessary data with service providers and ground owners to facilitate bookings. Our platform may contain third-party links, and we advise reviewing their privacy policies before sharing information.</p>
+                <p>7. Intellectual Property & Limitations of Liability<br> All content on SpinSpotter is owned by us or our licensors. Users cannot copy or distribute content without permission. The platform is provided "as is," and we are not liable for damages or issues related to sports ground listings.</p>
+                <p>8. Changes, Governing Law & Contact<br> SpinSpotter may update these policies at any time, with significant changes communicated via email or platform notifications. These terms are governed by applicable laws. For inquiries, contact us at support@spinspotter.com.</p>
+            </div>
+            <div class="w-full relative flex items-center space-x-1.5">
+                <input type="checkbox" id="terms" class="absolute inset-0 w-full h-full opacity-0 z-10">
+                <div class="checkbox anim">
+                    <span class="icon-check text-white opacity-0 text-20"></span>
+                </div>
+                <label id="terms" class="text-14 text-g2 font-normal inline-block">
+                    I have read, understand and accept the spinspotter website <a href="" class="inline-block text-secondary underline">Terms of use and privacy policy</a>
+                </label>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- When click on Playground Partner from home page  -->
      <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur z-50 py-10 px-6 overflow-y-auto flex hidden">
-        <div class="w-full max-w-[599px] bg-dark py-6 md:py-10 lg:py-12 2xl:py-14 px-4 md:px-6 lg:px-8 2xl:px-10 m-auto relative flex flex-col">
-            <a href="" class="ml-auto md:absolute md:top-7 md:right-10">
+        <div class="w-full max-w-screen-md bg-dark py-6 sm:py-12 2xl:py-14 px-4 md:px-6 lg:px-8 2xl:px-10 m-auto relative flex flex-col">
+            <a href="" class="ml-auto sm:absolute sm:top-7 sm:right-10">
                 <span class="icon-close text-22 text-white cursor-pointer"></span>
             </a>
-            <div class="w-full space-y-5 2xl:space-y-7">
-                <h4 class="text-white font-oswald font-semibold uppercase">Terms of use and privacy policy</h4>
-                <div class="space-y-3.5 text-white text-14 2xl:text-16">
-                    <p>1. Introduction<br> Welcome to SpinSpotter! By using our platform, you agree to comply with these policies regarding data collection, usage, user responsibilities, and legal terms. Please read carefully before using our services.</p>
-                    <p>2. Information We Collect & How We Use It<br> We collect personal details (name, email, phone number, payment information), device data, and location-based information. This helps facilitate bookings, provide customer support, send notifications, and improve user experience while complying with legal obligations.</p>
-                    <p>3. Data Security & Retention<br> We implement robust security measures to protect your data. However, no internet transmission is 100% secure. Data is retained as long as necessary to fulfill its intended purpose.</p>
-                    <p>4. User Responsibilities & Account Management<br> Users must be at least 18 years old and provide accurate information. Account credentials should be kept confidential. SpinSpotter reserves the right to suspend accounts violating these terms.</p>
-                    <p>5. Bookings, Payments & Cancellations<br> Users can browse and book sports grounds based on availability. Payments are processed securely via the platform, adhering to the ground owner's cancellation policy. SpinSpotter is not liable for disputes between users and ground owners.</p>
-                    <p>6. Sharing & Third-Party Links<br> We share necessary data with service providers and ground owners to facilitate bookings. Our platform may contain third-party links, and we advise reviewing their privacy policies before sharing information.</p>
-                    <p>7. Intellectual Property & Limitations of Liability<br> All content on SpinSpotter is owned by us or our licensors. Users cannot copy or distribute content without permission. The platform is provided "as is," and we are not liable for damages or issues related to sports ground listings.</p>
-                    <p>8. Changes, Governing Law & Contact<br> SpinSpotter may update these policies at any time, with significant changes communicated via email or platform notifications. These terms are governed by applicable laws. For inquiries, contact us at support@spinspotter.com.</p>
+            <div class="space-y-2.5 xl:space-y-3.5">
+                <div class="text-center">
+                    <h4>Join SpinSpotter as a Playground Partner</h4>
                 </div>
-                <div class="w-full relative flex items-center space-x-1.5">
-                    <input type="checkbox" id="terms" class="absolute inset-0 w-full h-full opacity-0 z-10">
-                    <div class="checkbox anim">
-                        <span class="icon-check text-white opacity-0 text-20"></span>
+                <div class="flex flex-wrap -mx-2.5">
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Business Name <span class="text-secondary">*</span></label>
+                        <input placeholder="Enter your name" type="text" class="input"/>
                     </div>
-                    <label id="terms" class="text-14 text-g2 font-normal inline-block">
-                        I have read, understand and accept the spinspotter website <a href="" class="inline-block text-secondary underline">Terms of use and privacy policy</a>
-                    </label>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Full Name <span class="text-secondary">*</span></label>
+                        <input placeholder="Enter your name" type="text" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Email <span class="text-secondary">*</span></label>
+                        <input placeholder="Enter your mail" type="email" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Phone Number <span class="text-secondary">*</span></label>
+                        <input placeholder="+91" type="email" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">date of birth</label>
+                        <input placeholder="+91" type="date" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Gender</label>
+                        <select name="" id="" class="input text-white">
+                            <option value="Select Gender">Select Gender</option>
+                            <option value="Select Gender">Male</option>
+                            <option value="Select Gender">Female</option>
+                            <option value="Select Gender">Other</option>
+                        </select>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">PAN CARD</label>
+                        <div class="relative text-center input py-[7px] md:py-2 lg:py-[11px]">
+                            <input placeholder="+91" type="file" class="absolute inset-0 w-full h-full opacity-0 z-10">
+                            <span class="icon-export text-[16px] md:text-[22px] lg:text-[24px] scale-125 text-white"></span>
+                        </div>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Aadhar Card <span class="text-secondary inline-block">*</span></label>
+                        <div class="relative text-center input py-[7px] md:py-2 lg:py-[11px]">
+                            <input placeholder="+91" type="file" class="absolute inset-0 w-full h-full opacity-0 z-10">
+                            <span class="icon-export text-[16px] md:text-[22px] lg:text-[24px] scale-125 text-white"></span>
+                        </div>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Bank UPI ID</label>
+                        <input placeholder="+91" type="text" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Bank Name <span class="text-secondary">*</span></label>
+                        <input placeholder="+91" type="text" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">Account Number <span class="text-secondary">*</span></label>
+                        <input placeholder="+91" type="text" class="input"/>
+                    </div>
+                    <div class="w-full py-1.5 lg:py-2.5 sm:w-1/2 p-2.5">
+                        <label class="label font-semibold">iFSC Code <span class="text-secondary">*</span></label>
+                        <input placeholder="+91" type="text" class="input"/>
+                    </div>
+                    <div class="w-full relative flex items-center space-x-2 py-1.5 lg:py-2.5 p-2.5">
+                        <input type="checkbox" id="terms" class="absolute inset-0 w-full h-full opacity-0 z-10">
+                        <div class="checkbox anim">
+                            <span class="icon-check text-white opacity-0 text-20"></span>
+                        </div>
+                        <label id="terms" class="text-14 text-g2 font-normal inline-block text-wrap">I have read, understand and accept the spinspotter website<a href="" class="inline-block text-secondary underline">Terms of use and privacy policy</a></label>
+                    </div>
+                    <div class="w-full text-center mt-1 lg:mt-2.5 xl:mt-4 py-1.5 lg:py-2.5 p-2.5">
+                        <a href="#" class="btn_primary inline-block font-oswald max-w-36">Next</a>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
 </body>
 <!-- swiper js  -->
 <script src="assets/js/swiper-bundle.min.js"></script>

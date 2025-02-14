@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-export:before {
+    content: "\e936";
+  }
   .icon-call:before {
     content: "\e935";
   }
