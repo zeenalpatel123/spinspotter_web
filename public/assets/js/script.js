@@ -128,7 +128,7 @@ breakpoints: {
     },
   });
   // swiper 4 end
-
+// gallery-thumbs swiper start  
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 16,
     slidesPerView: 3,
@@ -150,7 +150,36 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
       swiper: galleryThumbs,
     },
   });
-
+// gallery-thumbs swiper end  
+// favorite_sport swiper start 
+var swiper = new Swiper(".favorite_sport", {
+  slidesPerView: 1.3,
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+   delay: 2500,
+   disableOnInteraction: false,
+ },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    575: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1536: {
+      slidesPerView: 6,
+    },
+  },
+});
+// favorite_sport swiper end 
 
 // faqs tab script start
   $(function() {
@@ -192,3 +221,33 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     });
     });
 // my booking tabs end
+
+// smooth scroller js start 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 2,
+    smoothTouch: 0.5
+})
+// smooth scroller js end 
+
+// on scroll header js start 
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  var navbar = document.getElementById("main_header");          
+
+  if (prevScrollpos > currentScrollPos) {
+  navbar?.classList.remove("header_down");
+  navbar?.classList.add("header_up");
+  } else {
+  navbar?.classList.remove("header_up");
+  navbar?.classList.add("header_down");
+  }
+  prevScrollpos = currentScrollPos;
+}
+if (window.innerWidth <= 450) {
+  var prevScrollpos = window.pageYOffset;
+};
+// on scroll header js end 

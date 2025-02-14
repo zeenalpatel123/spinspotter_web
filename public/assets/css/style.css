@@ -2114,11 +2114,6 @@ input:checked + .days, input:checked + .area{
   margin-bottom: 1.25rem;
 }
 
-.-mx-5{
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
-}
-
 .mb-0{
   margin-bottom: 0px;
 }
@@ -2445,6 +2440,10 @@ input:checked + .days, input:checked + .area{
   max-width: 11rem;
 }
 
+.max-w-48{
+  max-width: 12rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -2563,10 +2562,6 @@ input:checked + .days, input:checked + .area{
 
 .max-w-sm{
   max-width: 24rem;
-}
-
-.max-w-48{
-  max-width: 12rem;
 }
 
 .-translate-x-1\/2{
@@ -2782,18 +2777,6 @@ input:checked + .days, input:checked + .area{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-7 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden{
@@ -3355,6 +3338,10 @@ input:checked + .days, input:checked + .area{
   padding-top: 0.5rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .pt-32{
   padding-top: 8rem;
 }
@@ -3369,10 +3356,6 @@ input:checked + .days, input:checked + .area{
 
 .pt-7{
   padding-top: 1.75rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
 }
 
 .text-left{
@@ -3683,12 +3666,12 @@ input:checked + .days, input:checked + .area{
   color: rgb(215 32 40 / var(--tw-text-opacity, 1));
 }
 
-.group:hover .group-hover\:opacity-100{
-  opacity: 1;
-}
-
 .group:hover .group-hover\:opacity-0{
   opacity: 0;
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 @media (min-width: 450px){
@@ -5049,12 +5032,12 @@ input:checked + .days, input:checked + .area{
     padding-top: 6rem;
   }
 
-  .lg\:pt-8{
-    padding-top: 2rem;
-  }
-
   .lg\:pt-6{
     padding-top: 1.5rem;
+  }
+
+  .lg\:pt-8{
+    padding-top: 2rem;
   }
 
   .lg\:text-14{
@@ -5323,6 +5306,11 @@ input:checked + .days, input:checked + .area{
     padding-right: 1rem;
   }
 
+  .xl\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .xl\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -5373,11 +5361,6 @@ input:checked + .days, input:checked + .area{
     padding-bottom: 1.5rem;
   }
 
-  .xl\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
   .xl\:pb-11{
     padding-bottom: 2.75rem;
   }
@@ -5390,6 +5373,10 @@ input:checked + .days, input:checked + .area{
     padding-bottom: 5rem;
   }
 
+  .xl\:pb-7{
+    padding-bottom: 1.75rem;
+  }
+
   .xl\:pr-5{
     padding-right: 1.25rem;
   }
@@ -5400,10 +5387,6 @@ input:checked + .days, input:checked + .area{
 
   .xl\:pt-28{
     padding-top: 7rem;
-  }
-
-  .xl\:pb-7{
-    padding-bottom: 1.75rem;
   }
 
   .xl\:text-14{
