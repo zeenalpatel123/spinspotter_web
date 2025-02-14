@@ -1915,6 +1915,28 @@ input:checked + .days, input:checked + .area{
 
 /* ground details swiper css end  */
 
+/* scrollbar css start  */
+
+*::-webkit-scrollbar {
+  scrollbar-width: auto;
+  width: 10px;
+  height: 13px;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00CF77;
+  border-radius: 1000px;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* scrollbar css end  */
+
 .visible{
   visibility: visible;
 }
